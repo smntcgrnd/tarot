@@ -65,6 +65,7 @@ header {
 nav {
     grid-area: nav;
     background-color: green;
+    overflow-y: auto; /* 수직 스크롤 허용 */
 }
 main {
     grid-area: main;
@@ -73,4 +74,27 @@ main {
 footer {
     grid-area: footer;
     background-color: aqua;
+}
+
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+}
+
+.slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    border: 1px solid #000000;
+    max-width: 500px;
 }
