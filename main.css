@@ -69,6 +69,7 @@ body {
 }
 header {
     grid-area: header;
+    padding: 0 1rem;
     border-bottom: 1px solid var(--border-color);
 }
 nav {
@@ -81,6 +82,7 @@ main {
 }
 footer {
     grid-area: footer;
+    padding: 0 1rem;
     border-top: 1px solid var(--border-color);
 }
 
