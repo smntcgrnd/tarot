@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Pretendard Variable';
+    src: url('./assets/fonts/PretendardVariable.woff2') format('woff2');
+    font-weight: 100 900; /* 가변 폰트의 범위 */
+    font-style: normal;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -13,7 +20,7 @@ body {
     line-height: 1.5;
     /* 4. Improve text rendering */
     -webkit-font-smoothing: antialiased;
-
+    font-family: 'Pretendard Variable', sans-serif; /* 기본 폰트 설정 */
     font-size: 1.8dvw;
 }
 
@@ -31,6 +38,7 @@ input, button, textarea, select {
 /* 7. Avoid text overflows */
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    font-weight: 500;
 }
 
 /* 8. Improve line wrapping */
@@ -40,7 +48,6 @@ p {
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
-
 
 
 /* Layout */
@@ -76,25 +83,66 @@ footer {
     background-color: aqua;
 }
 
-
-.list {
+/* 카드 선택 창 */
+ul.list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
-.table {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100%;
+li.list-item {
+}
+li.list-item > button {
+    background-color: transparent;
+    border: none;
+    transition: transform 0.2s ease; /* 부드러운 애니메이션 효과 */
+}
+li.list-item > button:hover {
+    cursor: pointer;
+    transform: translateX(5px); /* 우측으로 살짝 움직임 */
 }
 
+/* 테이블 */
+.table {
+    height: 100%;
+}
 .slot {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 .card {
-    border: 1px solid #000000;
-    max-width: 500px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* 부드러운 애니메이션 효과 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 기본 그림자 */
+    border-radius: 4px;
+}
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-5px); /* 위로 살짝 움직임 */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* hover 시 더 강한 그림자 */
+}
+
+/* 전체 삭제 버튼 */
+.remove-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: none;
+    width: 10dvw;
+    height: 10dvw;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    transition: transform 0.2s ease; /* 부드러운 애니메이션 효과 */
+}
+.remove-btn:hover {
+    cursor: pointer;
+    transform: translateY(-5px); /* 위로 살짝 움직임 */
 }

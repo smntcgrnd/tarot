@@ -12,46 +12,35 @@
 <header>header</header>
 <nav>
     <ul class="list">
-        <li class="list-item">test1</li>
-        <li class="list-item">test1</li>
-        <li class="list-item">test1</li>
-        <li class="list-item">test1</li>
-        <li class="list-item">test1</li>
-        <li class="list-item">test1</li>
-        <li class="list-item">test1</li>
-        <li class="list-item">test1</li>
-        <li class="list-item">test1</li>
-        <li class="list-item">test2</li>
-        <li class="list-item">test3</li>
-        <li class="list-item">test4</li>
-        <li class="list-item">test5</li>
-        <li class="list-item">test6</li>
-        <li class="list-item">test7</li>
-        <li class="list-item">test8</li>
-        <li class="list-item">test9</li>
-        <li class="list-item">test10</li>
-        <li class="list-item">test11</li>
-        <li class="list-item">test12</li>
-        <li class="list-item">test13</li>
-        <li class="list-item">test14</li>
-        <li class="list-item">test15</li>
-        <li class="list-item">test16</li>
-        <li class="list-item">test17</li>
-        <li class="list-item">test18</li>
-        <li class="list-item">test19</li>
-        <li class="list-item">test20</li>
-        <li class="list-item">test21</li>
+        <li class="list-item"><button onclick="handleCard('court_cups_king')">코트 - 컵 - 킹</button></li>
+        <li class="list-item"><button onclick="handleCard('court_cups_queen')">코트 - 컵 - 퀸</button></li>
+        <li class="list-item"><button onclick="handleCard('court_cups_knight')">코트 - 컵 - 나이트</button></li>
+        <li class="list-item"><button onclick="handleCard('court_cups_page')">코트 - 컵 - 페이지</button></li>
+        <li class="list-item"><button onclick="handleCard('court_pentacles_king')">코트 - 펜타클 - 킹</button></li>
+        <li class="list-item"><button onclick="handleCard('court_pentacles_queen')">코트 - 펜타클 - 퀸</button></li>
+        <li class="list-item"><button onclick="handleCard('court_pentacles_knight')">코트 - 펜타클 - 나이트</button></li>
+        <li class="list-item"><button onclick="handleCard('court_pentacles_page')">코트 - 펜타클 - 페이지</button></li>
+        <li class="list-item"><button onclick="handleCard('court_swords_king')">코트 - 소드 - 킹</button></li>
+        <li class="list-item"><button onclick="handleCard('court_swords_queen')">코트 - 소드 - 퀸</button></li>
+        <li class="list-item"><button onclick="handleCard('court_swords_knight')">코트 - 소드 - 나이트</button></li>
+        <li class="list-item"><button onclick="handleCard('court_swords_page')">코트 - 소드 - 페이지</button></li>
+        <li class="list-item"><button onclick="handleCard('court_wands_king')">코트 - 완즈 - 킹</button></li>
+        <li class="list-item"><button onclick="handleCard('court_wands_queen')">코트 - 완즈 - 퀸</button></li>
+        <li class="list-item"><button onclick="handleCard('court_wands_knight')">코트 - 완즈 - 나이트</button></li>
+        <li class="list-item"><button onclick="handleCard('court_wands_page')">코트 - 완즈 - 페이지</button></li>
     </ul>
 </nav>
 <main>
     <div class="table">
         <div class="slot">
-            <div class="card">card1</div>
+
         </div>
-        <div class="slot"></div>
-        <div class="slot"></div>
     </div>
 </main>
+<button class="remove-btn" onclick="removeAll()">REMOVE ALL</button>
 <footer>footer</footer>
+
+<!-- Script -->
+<script src="index.js"></script>
 </body>
 </html>
