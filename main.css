@@ -1,0 +1,76 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 1.8dvw;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+
+
+/* Layout */
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+            "header header header header"
+            "main main main nav"
+            "footer footer footer footer"
+    ;
+    grid-template-columns: 1fr 1fr 1fr 20dvw;
+    grid-template-rows: 8dvh 1fr 8dvh;
+}
+header {
+    grid-area: header;
+    background-color: blue;
+}
+nav {
+    grid-area: nav;
+    background-color: green;
+}
+main {
+    grid-area: main;
+    background-color: yellow;
+}
+footer {
+    grid-area: footer;
+    background-color: aqua;
+}
