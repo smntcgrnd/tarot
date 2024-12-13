@@ -23,5 +23,9 @@ const handleCard = (cardName) => {
 }
 
 const removeAll = () => {
-    console.log("REMOVE ALL!!!");
+    const slot = document.querySelector('.slot');
+    if (slot) {
+        const cards = slot.querySelectorAll('.card');
+        cards.forEach(card => card.remove());
+    }
 }

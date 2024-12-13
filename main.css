@@ -13,6 +13,7 @@
 /* 2. Remove default margin */
 * {
     margin: 0;
+    --border-color: #000000;
 }
 
 body {
@@ -68,20 +69,19 @@ body {
 }
 header {
     grid-area: header;
-    background-color: blue;
+    border-bottom: 1px solid var(--border-color);
 }
 nav {
     grid-area: nav;
-    background-color: green;
     overflow-y: auto; /* 수직 스크롤 허용 */
+    border-left: 1px solid var(--border-color);
 }
 main {
     grid-area: main;
-    background-color: yellow;
 }
 footer {
     grid-area: footer;
-    background-color: aqua;
+    border-top: 1px solid var(--border-color);
 }
 
 /* 카드 선택 창 */
@@ -104,6 +104,7 @@ li.list-item > button {
     border: none;
     transition: transform 0.2s ease; /* 부드러운 애니메이션 효과 */
     padding: 0 1rem;
+    font-size: 1.6dvw;
 }
 li.list-item > button:hover {
     cursor: pointer;
@@ -126,7 +127,6 @@ li.list-item > button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     background-color: transparent;
     border: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease; /* 부드러운 애니메이션 효과 */
@@ -141,12 +141,15 @@ li.list-item > button:hover {
 
 /* 전체 삭제 버튼 */
 .remove-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     bottom: 1rem;
     right: 1rem;
     border: none;
-    width: 8dvw;
-    height: 8dvw;
+    width: 4dvw;
+    height: 4dvw;
     border-radius: 100%;
     background-color: whitesmoke;
     transition: transform 0.2s ease; /* 부드러운 애니메이션 효과 */
