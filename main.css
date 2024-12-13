@@ -13,7 +13,10 @@
 /* 2. Remove default margin */
 * {
     margin: 0;
-    --border-color: #000000;
+    --border-color: #121212;
+    --background-color: whitesmoke;
+    --primary-color: #ffb301;
+    --text-color: #121212;
 }
 
 body {
@@ -24,6 +27,8 @@ body {
     font-family: 'Pretendard Variable', sans-serif; /* 기본 폰트 설정 */
     font-size: 1.8dvw;
     font-weight: 500;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* 5. Improve media defaults */
@@ -153,7 +158,7 @@ li.list-item > button:hover {
     width: max(4dvw, 4rem);
     height: max(4dvw, 4rem);
     border-radius: 100%;
-    background-color: whitesmoke;
+    background-color: var(--primary-color);
     transition: transform 0.2s ease; /* 부드러운 애니메이션 효과 */
 }
 .remove-btn:hover {
