@@ -150,8 +150,8 @@ li.list-item > button:hover {
     bottom: 1rem;
     right: 1rem;
     border: none;
-    width: 4dvw;
-    height: 4dvw;
+    width: max(4dvw, 4rem);
+    height: max(4dvw, 4rem);
     border-radius: 100%;
     background-color: whitesmoke;
     transition: transform 0.2s ease; /* 부드러운 애니메이션 효과 */
