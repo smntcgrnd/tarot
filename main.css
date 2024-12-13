@@ -72,8 +72,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr 20dvw;
     grid-template-rows: 4dvh 1fr 4dvh;
 }
-header {
+header {;
     grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     padding: 0 1rem;
     border-bottom: 1px solid var(--border-color);
 }
@@ -87,7 +90,6 @@ main {
 }
 footer {
     grid-area: footer;
-    padding: 0 1rem;
     border-top: 1px solid var(--border-color);
 }
 
@@ -164,4 +166,51 @@ li.list-item > button:hover {
 .remove-btn:hover {
     cursor: pointer;
     transform: translateY(-5px); /* 위로 살짝 움직임 */
+}
+
+
+/* contact */
+footer {
+    display: grid;
+    grid-template-columns: 4fr 1fr
+}
+footer .info {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1rem;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.logo > span:nth-of-type(1) {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: 0.5rem;
+}
+.logo > span:nth-of-type(2) {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+}
+footer .title {
+    font-size: 1dvw;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+footer .contact > a.email {
+    line-height: 1;
+    color: var(--text-color);
+    text-decoration: none;
 }
