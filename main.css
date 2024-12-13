@@ -22,6 +22,7 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: 'Pretendard Variable', sans-serif; /* 기본 폰트 설정 */
     font-size: 1.8dvw;
+    font-weight: 500;
 }
 
 /* 5. Improve media defaults */
@@ -63,7 +64,7 @@ body {
             "footer footer footer footer"
     ;
     grid-template-columns: 1fr 1fr 1fr 20dvw;
-    grid-template-rows: 8dvh 1fr 8dvh;
+    grid-template-rows: 4dvh 1fr 4dvh;
 }
 header {
     grid-area: header;
@@ -84,6 +85,11 @@ footer {
 }
 
 /* 카드 선택 창 */
+.list-desc {
+    font-size: 1.5dvw;
+    font-weight: 700;
+    padding: 1rem;
+}
 ul.list {
     padding: 0;
     margin: 0;
@@ -92,9 +98,12 @@ ul.list {
 li.list-item {
 }
 li.list-item > button {
+    width: 100%;
+    text-align: left;
     background-color: transparent;
     border: none;
     transition: transform 0.2s ease; /* 부드러운 애니메이션 효과 */
+    padding: 0 1rem;
 }
 li.list-item > button:hover {
     cursor: pointer;
@@ -136,8 +145,8 @@ li.list-item > button:hover {
     bottom: 1rem;
     right: 1rem;
     border: none;
-    width: 10dvw;
-    height: 10dvw;
+    width: 8dvw;
+    height: 8dvw;
     border-radius: 100%;
     background-color: whitesmoke;
     transition: transform 0.2s ease; /* 부드러운 애니메이션 효과 */
