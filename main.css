@@ -82,6 +82,7 @@ header {;
 }
 nav {
     grid-area: nav;
+    overflow-x: hidden;
     overflow-y: auto; /* 수직 스크롤 허용 */
     border-left: 1px solid var(--border-color);
 }
@@ -100,7 +101,7 @@ footer {
     padding: 1rem 1rem 0 1rem;
 }
 ul.list {
-    padding: 0;
+    padding: 0 0 1rem 0;
     margin: 0;
     list-style: none;
 }
