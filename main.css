@@ -188,7 +188,7 @@ footer .info {
     align-items: flex-end;
 }
 .logo > span:nth-of-type(1) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     line-height: 1;
     margin-right: 0.5rem;
@@ -206,7 +206,7 @@ footer .contact {
     padding-left: 1rem;
 }
 footer .title {
-    font-size: 1dvw;
+    font-size: 1rem;
     font-weight: 700;
     margin-right: 1rem;
 }
