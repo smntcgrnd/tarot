@@ -97,7 +97,7 @@ footer {
 .list-desc {
     font-size: 1.5dvw;
     font-weight: 700;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 ul.list {
     padding: 0;
