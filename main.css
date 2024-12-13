@@ -132,7 +132,7 @@ li.list-item > button:hover {
     height: 100%;
 }
 .card {
-    width: 100%;
+    width: 15dvw;
     max-width: 400px;
     display: flex;
     justify-content: center;
