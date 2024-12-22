@@ -95,6 +95,13 @@ footer {
 }
 
 /* 배열법 선택 드롭다운 */
+.spread-selector > a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+.spread-selector > label {
+    visibility: hidden;
+}
 .spread-selector > select {
     background-color: transparent;
     border: none;
