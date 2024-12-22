@@ -72,10 +72,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr 20dvw;
     grid-template-rows: 4dvh 1fr 4dvh;
 }
-header {;
+header {
     grid-area: header;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
     border-bottom: 1px solid var(--border-color);
@@ -92,6 +92,13 @@ main {
 footer {
     grid-area: footer;
     border-top: 1px solid var(--border-color);
+}
+
+/* 배열법 선택 드롭다운 */
+.spread-selector > select {
+    background-color: transparent;
+    border: none;
+
 }
 
 /* 카드 선택 창 */
