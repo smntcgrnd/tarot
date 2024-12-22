@@ -17,6 +17,9 @@
     --background-color: whitesmoke;
     --primary-color: #ffb301;
     --text-color: #121212;
+    --space-lg: 4rem;
+    --space-md: 2rem;
+    --space-xs: 1rem;
 }
 
 body {
@@ -228,4 +231,34 @@ footer .contact > a.email {
     line-height: 1;
     color: var(--text-color);
     text-decoration: none;
+}
+
+
+/* Spread */
+/* Four Spread */
+#spread-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#spread-four .top {
+    width: 100%;
+    height: 40dvh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+#spread-four .bottom {
+    width: 100%;
+    height: 40dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr
+}
+#spread-four .slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
