@@ -35,7 +35,7 @@ const handleFourSpread = (cardName) => {
 }
 
 // Two Choice Spread
-const handleTwoChoiceSpread = (cardName) => {
+const handleFiveCardSpread = (cardName) => {
     // 이미지 요소 생성
     const img = document.createElement('img');
     img.src = `../assets/cards/${cardName}.jpg`; // 파일 이름은 cardName 값과 연관
