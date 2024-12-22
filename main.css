@@ -150,7 +150,7 @@ li.list-item > button:hover {
 }
 .card {
     width: 15dvw;
-    max-width: 400px;
+    max-width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,12 +263,23 @@ footer .contact > a.email {
     height: 100%;
 }
 
-/* Four Spread */
+/* Two Choice Spread */
 #spread-two-choice {
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    padding: var(--space-md) var(--space-sm);
+    padding: var(--space-sm);
+}
+
+/* Timeline Spread */
+#spread-timeline {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: var(--space-sm);
+    grid-gap: var(--space-sm);
 }
