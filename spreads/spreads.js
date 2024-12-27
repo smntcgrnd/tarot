@@ -83,7 +83,7 @@ const handleFiveCardSpread = (cardName) => {
   - Celtic Cross
 * */
 
-const handleTemCardSpread = (cardName) => {
+const handleTenCardSpread = (cardName) => {
     // 이미지 요소 생성
     const img = document.createElement('img');
     img.src = `../assets/cards/${cardName}.jpg`; // 파일 이름은 cardName 값과 연관
