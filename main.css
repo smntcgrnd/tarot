@@ -309,21 +309,22 @@ footer .contact > a.email {
     position: relative;
     width: 100%;
 }
-#spread-celtic-cross .left .overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: var(--space-sm);
-}
+/*#spread-celtic-cross .left .overlay {*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    grid-template-rows: repeat(3, 1fr);*/
+/*    grid-gap: var(--space-sm);*/
+/*}*/
 #spread-celtic-cross #slot_2 {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
     margin-top: 2dvh;
 }
 #spread-celtic-cross .left .inner {
